@@ -1,0 +1,64 @@
+<mxfile host="app.diagrams.net" modified="2024-06-06T19:26:56.331Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="r2TamqSH5VKWHLyFYnz9" version="24.4.14" type="github">
+  <diagram name="Page-1" id="9k5f7L8MAmS8ImPHAavn">
+    <mxGraphModel dx="1434" dy="754" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="OfqImFuGBAiv14akohiS-12" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;" parent="1" vertex="1">
+          <mxGeometry x="400" y="285" width="280" height="530" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="OfqImFuGBAiv14akohiS-1" target="OfqImFuGBAiv14akohiS-3" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-1" value="pymain_run_python(main.c)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="305" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="OfqImFuGBAiv14akohiS-3" target="OfqImFuGBAiv14akohiS-5" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-3" value="pymain_run_file(main.c)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="60" y="455" width="190" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-10" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="OfqImFuGBAiv14akohiS-5" target="OfqImFuGBAiv14akohiS-9" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-5" value="pyrun_file(pythonrun.c)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="605" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-7" value=".......(ignore few function calls" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+          <mxGeometry x="20" y="550" width="140" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-8" value="Python RUN File call path" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="40" y="30" width="770" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-9" value="_PyParser_ASTFromFile(peg_api.c)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="50" y="715" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OfqImFuGBAiv14akohiS-11" target="OfqImFuGBAiv14akohiS-13" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-11" value="_PyTokenizer_FromFile(pegen.c)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Initialize token state&amp;nbsp;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="305" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OfqImFuGBAiv14akohiS-13" target="OfqImFuGBAiv14akohiS-14" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-13" value="_PyPegen_Parser_New(pegen.c)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Initialize parser and pass token state to parser&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="405" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="OfqImFuGBAiv14akohiS-14" target="OfqImFuGBAiv14akohiS-17" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-14" value="_PyPegen_run_parser(pegen.c)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;Run parser&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="430" y="505" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-17" value="_PyPegen_parse(parser.c)&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;It contains&amp;nbsp;&lt;/div&gt;&lt;div&gt;1. file_rule&lt;/div&gt;&lt;div&gt;2. interactive_rule&lt;/div&gt;&lt;div&gt;3. eval_rule&lt;/div&gt;&lt;div&gt;4. func_type_rule&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;The entry point of parser grammar rule&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="422.5" y="605" width="225" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="OfqImFuGBAiv14akohiS-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=-0.007;entryY=0.457;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" source="OfqImFuGBAiv14akohiS-9" target="OfqImFuGBAiv14akohiS-12" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
